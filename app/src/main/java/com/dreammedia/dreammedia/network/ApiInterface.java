@@ -177,7 +177,6 @@ public interface ApiInterface {
             @Header(TOKEN)  String token ,
             @Path FollowrsRequest iserid );
 */
-
     @GET("api/v1/notification/getall/{id}")
     Call<NotificationResponse> getNotification(
             @Header(APIKEY)  String key  ,
