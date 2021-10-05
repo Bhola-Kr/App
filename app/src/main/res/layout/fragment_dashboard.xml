@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/mySwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+            <LinearLayout
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/crdSlider"
+                        app:cardElevation="@dimen/_3sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_160sdp">
+
+                            <com.dreammedia.dreammedia.customWigits.viewPager.SliderView
+                                android:id="@+id/sliderView"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_145sdp"/>
+
+                            <LinearLayout
+                                android:layout_below="@+id/sliderView"
+                                android:id="@+id/pagesContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:id="@+id/cardAvtarHomFrg"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/gray_6"
+                            android:scaleType="centerCrop"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"/>
+
+                        <TextView
+                            android:id="@+id/createPost"
+                            android:hint="Write something here..."
+                            android:gravity="center|left"
+                            style="@style/TextStyle_regular"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:paddingLeft="@dimen/_9sdp"
+                            android:paddingRight="@dimen/_9sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/cardAvtarHomFrg"
+                            android:layout_toLeftOf="@+id/caerdImage"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:background="@drawable/drawable_rectangle_corner_boarder_gry"
+                            android:layout_width="match_parent"
+                            android:minHeight="@dimen/_30sdp" />
+
+                        <ImageView
+                            android:id="@+id/caerdImage"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_image_select"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="LinearLayoutManager"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:id="@+id/error_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvNoposts"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/error_txt_cause"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/activity_margin_quarter" />
+
+                <Button
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/error_btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/activity_margin_content"
+                    android:text="@string/btn_retry"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.zyp.cardview.YcCardView
+        android:id="@+id/lyMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:clickable="true"
+        android:focusable="true"
+        app:ycCardCornerRadius="@dimen/_12sdp"
+        app:ycCardElevation="5dp"
+        app:ycCardMaxElevation="5dp"
+        app:ycCardPreventCornerOverlap="false"
+        app:ycStartShadowColor="@color/gray_8">
+
+    <RelativeLayout
+        android:clipChildren="false"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center"
+            android:text="STANDARD"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/_9sdp"
+            style="@style/TextStyle_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/tvTitle"
+            android:layout_toLeftOf="@+id/tvPrise"
+            android:textStyle="bold"
+            style="@style/TextStyle_bold"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/_11sdp"
+            android:text="$"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPrise"
+            android:gravity="top"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_light"
+            android:layout_below="@+id/tvTitle"
+            android:textSize="@dimen/_32sdp"
+            android:text="78"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvYr"
+            android:visibility="gone"
+            android:layout_alignEnd="@+id/tvPrise"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/tvPrise"
+            android:textStyle="bold"
+            style="@style/TextStyle_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6sdp"
+            android:text="564/yr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_8sdp"
+            android:id="@+id/tvLiblity"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="Validity"
+            android:layout_below="@+id/tvYr"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+            android:id="@+id/tvLiblityPrise"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text=""
+            android:layout_below="@+id/tvLiblity"
+            android:textSize="@dimen/_9sdp"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <View
+            android:id="@+id/v1"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_below="@+id/tvLiblityPrise"
+            android:background="@color/gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <TextView
+            android:id="@+id/tvPersonalProperty"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="Amount"
+            android:layout_below="@+id/v1"
+            android:textSize="@dimen/_8sdp"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPersonalPropertyPrise"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text=""
+            android:layout_below="@+id/tvPersonalProperty"
+            android:textSize="@dimen/_9sdp"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/v2"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_below="@+id/tvPersonalPropertyPrise"
+            android:background="@color/gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/tvMedical"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="LIABILITY"
+            android:layout_below="@+id/v2"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvMedicalPrise"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:text=""
+            android:layout_below="@+id/tvMedical"
+            android:textSize="@dimen/_9sdp"
+            style="@style/TextStyle_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/_70sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/drawable_shadow2"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_25sdp">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    style="@style/TextStyle_regular"
+                    android:text="BUY"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </com.zyp.cardview.YcCardView>
+
+</layout>

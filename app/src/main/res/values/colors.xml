@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#00BCD4</color>
+    <color name="colorAccent">#30aec7</color>
+
+    <color name="btnColor">#30aec7</color>
+
+    <color name="menu_color">#30aec7</color>
+    <color name="menu_unselect_color">#4D4D4D</color>
+
+    <color name="temp2">#f1af33</color>
+    <color name="temp1">#976449</color>
+    <color name="white_transparent_50">#80FFFFFF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bold_text">#3f464e</color>
+    <color name="gray">#DCDCDC</color>
+
+    <color name="gray_8">#8E8888</color>
+    <color name="gray_6">#B5ADAD</color>
+
+    <color name="colorGray">#91949b</color>
+    <color name="gray_light">#e3e3e3</color>
+    <color name="gray_light2">#F4F1F1</color>
+
+    <color name="blue_dark">#2E2767</color>
+    <color name="iconeColor">#777777</color>
+
+    <color name="color_gray_dialog">#f4f4f4</color>
+    <color name="splash_background">#30aec7</color>
+
+    <color name="rfab__color_shadow">#c6c6c6</color>
+
+    <color name="placeholder_grey_20">#33AAADC4</color>
+    <color name="placeholder_grey">#AAADC4</color>
+
+
+    <color name="icons_colors">#E3E3E3</color>
+
+
+    <color name="f1">#c7998c</color>
+
+    <color name="c0">#5e4e41</color>
+    <color name="c1">#F44336</color>
+    <color name="c2">#dc2f02</color>
+    <color name="c3">#e85d04</color>
+    <color name="c4">#C34C00</color>
+    <color name="c6">#f48c06</color>
+    <color name="c7">#faa307</color>
+    <color name="c8">#ffba08</color>
+    <color name="c9">#F39C12</color>
+    <color name="c10">#DC7633</color>
+    <color name="c11">#9B59B6</color>
+    <color name="c12">#7D3C98</color>
+    <color name="c13">#2471A3</color>
+    <color name="c14">#2E86C1</color>
+    <color name="c15">#17A589</color>
+    <color name="c16">#138D75</color>
+    <color name="c17">#229954</color>
+    <color name="c18">#28B463</color>
+    <color name="c19">#ff5c8a</color>
+    <color name="c20">#ff99ac</color>
+    <color name="c21">#fb8500</color>
+    <color name="c22">#9b5de5</color>
+    <color name="c23">#90e0ef</color>
+    <color name="c24">#80ed99</color>
+    <color name="c25">#c0fdff</color>
+    <color name="c26">#ffff3f</color>
+
+
+
+
+
+
+
+</resources>

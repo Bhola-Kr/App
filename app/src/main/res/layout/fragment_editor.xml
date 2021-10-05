@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_above="@+id/lyBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/mainFrame"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.dreammedia.dreammedia.customWigits.viewPager.imageview.TopCropImageView
+                    android:id="@+id/img1"
+                    android:src="@drawable/nature"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_220sdp"/>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/lyBottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ly"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/text"
+                    android:text=""
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_text"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_image_gallery"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/frame"
+                    android:text="Frame"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_frame"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/downoad"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_toLeftOf="@+id/downoad"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:src="@drawable/ic_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/ly"
+                android:id="@+id/colorRecycler"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/colorRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lyText"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fonStyle"
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center|left"
+                        android:textColor="@color/white"
+                        style="@style/TextStyle_bold"
+                        android:text="Font Style"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        android:drawableRight="@drawable/ic_down_arrow"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingRight="@dimen/_14sdp"
+                        android:layout_margin="@dimen/_12sdp"
+                        android:background="@drawable/drawable_rectangle_corner_editor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <SeekBar
+                        android:id="@+id/fontSeek"
+                        android:progress="130"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:layout_margin="@dimen/_12sdp"
+                        android:layout_below="@+id/fonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fontRecycler"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/fram1"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/frame1"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@color/gray_light"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

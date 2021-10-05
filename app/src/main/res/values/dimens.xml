@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="paddingItemDecorationDefault">8dp</dimen>
+    <dimen name="paddingItemDecorationEdge">24dp</dimen>
+    <dimen name="poster_thumb_width">72dp</dimen>
+    <dimen name="poster_thumb_height">96dp</dimen>
+    <dimen name="poster_hero_height">192dp</dimen>
+
+    <dimen name="color_picker_padding">22dp</dimen>
+    <dimen name="edittext_text_corner_radius">20dp</dimen>
+    <dimen name="autoresize_min_width">200dp</dimen>
+    <dimen name="autoresize_max_text_size">30sp</dimen>
+    <dimen name="autoresize_min_text_size">16sp</dimen>
+
+    <dimen name="temp5">70sp</dimen>
+
+</resources>
+

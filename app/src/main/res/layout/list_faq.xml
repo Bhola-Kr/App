@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_centerVertical="true"
+            style="@style/TextStyle_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/bold_text"
+            android:textSize="@dimen/_11sdp"
+            android:gravity="left"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:text="I Wanna Join How do i sign up ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/dropDown"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_down_"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:visibility="gone"
+        android:layout_below="@+id/ly"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_11sdp"
+        style="@style/TextStyle_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_below="@+id/tvAnswer"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

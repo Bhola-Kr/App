@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Dream Media</string>
+    <string name="title_activity_login_signup">LoginSignupActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="facebook_app_id">3664774786975587</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb3664774786975587</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome">Welcome</string>
+    <string name="login_to_yr_account">Login to your account</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="findyr_account">Found your Account</string>
+    <string name="continue_">Continue</string>
+
+    <string name="sign_up"><u>Sign up</u>.</string>
+    <string name="log_in"><u>Login</u></string>
+    <string name="user_email">Username/Email/Mobile</string>
+    <string name="enterVerifyCode">Enter Verification Code</string>
+    <string name="verificationCode">Verification Code</string>
+    <string name="lets_start">lets get started</string>
+    <string name="creat_account">Create an account to Dream Media</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="referal_code">Referral code</string>
+
+    <string name="by_submitting">By pressing "Login" you are agree to our</string>
+    <string name="by_submitting_signup">By pressing "Signup" you are agree to our</string>
+
+    <string name="terms_condition"><u>Terms &amp; Conditions</u></string>
+    <string name="signUp">Signup</string>
+    <string name="whoToFollow">Who to follow</string>
+    <string name="follow">Follow</string>
+
+    <string name="t1"></string>
+    <string name="t2"></string>
+    <string name="t3"></string>
+    <string name="skip">Skip</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="dreamMedia">Dream Media</string>
+    <string name="write">Write</string>
+    <string name="t4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley</string>
+    <string name="like">Like</string>
+    <string name="share">Share</string>
+    <string name="seeAll">See All</string>
+    <string name="posts">Posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="profile">Profile</string>
+    <string name="wallet">Wallet</string>
+    <string name="Faq">Faq</string>
+    <string name="contact">Contact us</string>
+    <string name="rateUs">Rate Us</string>
+    <string name="logOut">Logout</string>
+    <string name="changeProfile">Change Profile Photo</string>
+    <string name="report">Report</string>
+    <string name="download">Download</string>
+
+
+    <string name="read_more">show more</string>
+    <string name="read_less">...show less</string>
+    <string name="createPost">Create Post</string>
+    <string name="post">POST</string>
+    <string name="whatOnmind">Whats on your mind?</string>
+    <string name="addtoPost">Add to your post</string>
+    <string name="changePassword">Change Password</string>
+    <string name="delete">Delete</string>
+    <string name="remove">Remove</string>
+    <string name="category">Category 1</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="nameLeftEmpty">name not left empty</string>
+    <string name="mailLeftEmpty">email not left empty</string>
+    <string name="mailEnvlid">InValid email address</string>
+    <string name="mobileLeftEmpty">Mobile Number not left empty</string>
+    <string name="mobileEnvlid">InValid mobile number </string>
+    <string name="passwordLeftEmpty">password not left empty</string>
+    <string name="ConfirmpasswordLeftEmpty">confirm password not left empty</string>
+    <string name="passwordEnvlid">Password must be minimum 8 characters at least 1 Upper Alphabet, 1 Number and 1 Special Character</string>
+
+    <string name="ConfirmpasswordNotMatch">password not match</string>
+    <string name="otpNotLeftEmpty">OTP not left empty</string>
+    <string name="usernameLeftEmpty">username not left empty</string>
+    <string name="firnameLeft">first name not left empty</string>
+    <string name="lastame">last name not left empty</string>
+    <string name="contactNo">contact not left empty</string>
+
+    <string name="whatWentWrong">What went wrong</string>
+    <string name="tap_to_reload">Tap to reload</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+    <string name="btn_retry">Retry</string>
+    <string name="dontHaveaccount"><u>create a account</u></string>
+    <string name="sharePost">Share Post</string>
+
+
+</resources>

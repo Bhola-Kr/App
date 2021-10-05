@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lyMain"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp">
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.imageview.TopCropImageView
+            android:id="@+id/img1"
+            android:src="@drawable/nature"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_250sdp"/>
+
+        <ImageView
+            android:id="@+id/imgFram"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.xiaopo.flying.sticker.StickerView
+            android:id="@+id/sticker_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.edittext.RotatableAutofitEditText
+            android:id="@+id/tvT1"
+            style="@style/TextStyle_regular"
+            android:layout_marginTop="@dimen/_290sdp"
+            android:layout_marginLeft="@dimen/_60sdp"
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:text="Hope your day's turning out to be the best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textColor="@color/f1"
+            autofit:clipBounds="false"
+            autofit:maxTextSizee="@dimen/autoresize_max_text_size"
+            autofit:minTextSizee="@dimen/autoresize_min_text_size"
+            autofit:minWidth="@dimen/autoresize_min_width"
+            autofit:movable="true"
+            autofit:resizable="false"
+            autofit:rotatable="false" />
+
+
+    </com.xiaopo.flying.sticker.StickerView>
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.edittext.RotatableAutofitEditText
+            android:id="@+id/tvT2"
+            style="@style/TextStyle_regular"
+
+            android:layout_marginTop="@dimen/_310sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
+
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:text="from your favorite gal pals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:fontFamily="@font/f3"
+            android:textColor="@color/temp1"
+            autofit:clipBounds="false"
+            autofit:maxTextSizee="@dimen/autoresize_max_text_size"
+            autofit:minTextSizee="@dimen/autoresize_min_text_size"
+            autofit:minWidth="@dimen/autoresize_min_width"
+            autofit:movable="true"
+            autofit:resizable="false"
+            autofit:rotatable="false" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

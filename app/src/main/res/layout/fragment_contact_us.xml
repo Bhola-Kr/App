@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:padding="@dimen/_24sdp"
+                    android:src="@drawable/ic_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"/>
+
+                <TextView
+                    android:textColor="@color/bold_text"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center"
+                    android:text="Have any query?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/_12sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/tvFirstName"
+                        android:textSize="@dimen/_11sdp"
+                        style="@style/TextStyle_regular"
+                        android:hint="First Name "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/tvLastName"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_11sdp"
+                        style="@style/TextStyle_regular"
+                        android:hint="Last Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/contact"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_11sdp"
+                        style="@style/TextStyle_regular"
+                        android:hint="Contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/tvEmail"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_11sdp"
+                        style="@style/TextStyle_regular"
+                        android:hint="Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/tvMessage"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_11sdp"
+                        style="@style/TextStyle_regular"
+                        android:hint="Message"
+                        android:gravity="top"
+                        android:padding="@dimen/_4sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvSend"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        style="@style/TextStyle_bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/drawable_round_corner_solid"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:text="Send"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

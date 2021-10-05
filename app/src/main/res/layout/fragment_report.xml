@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/TextStyle_bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:text="Why are you reporting this post?"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvNuditySexual"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/bold_text"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvVoilent"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/bold_text"
+                        android:gravity="center|left"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvBulling"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/bold_text"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvHarmFull"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/bold_text"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvSucide"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/bold_text"
+                        android:gravity="center|left"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvFalse"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:textColor="@color/bold_text"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDontLike"
+                        style="@style/TextStyle_regular"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/bold_text"
+                        android:gravity="center|left"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>
+
+                    <View
+                        android:background="@color/rfab__color_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</layout>

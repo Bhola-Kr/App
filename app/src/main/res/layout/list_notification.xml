@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/lu"
+            android:padding="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgcard"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="5dip"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="repeat"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:riv_oval="false" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TextStyle_bold"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/imgcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDesignation"
+                style="@style/TextStyle_regular"
+                android:layout_below="@+id/tvName"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:textSize="@dimen/_11sdp"
+                android:drawablePadding="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor="@color/bold_text"
+                android:layout_toRightOf="@+id/imgcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/TextStyle_regular"
+                android:layout_below="@+id/tvDesignation"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_clock"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:textSize="@dimen/_11sdp"
+                android:drawablePadding="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor="@color/bold_text"
+                android:layout_toRightOf="@+id/imgcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    <View
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_below="@+id/lu"
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

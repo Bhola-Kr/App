@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/WhoToFollowFragment">
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.dashboard.DashboardFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_WhoToFollowFragment"
+            app:destination="@id/WhoToFollowFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_CreatePostFragment"
+            app:destination="@id/CreatePostFragment" />
+        <action
+            android:id="@+id/action_DashboardFragment_to_WhoToFollow2Fragment"
+            app:destination="@id/WhoToFollow2Fragment" />
+        <action
+            android:id="@+id/action_DashboardFragment_to_WalletFragment"
+            app:destination="@id/WalletFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_RepoartFragment"
+            app:destination="@id/RepoartFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_WhoToFollowDashBoardFragment"
+            app:destination="@id/WhoToFollowDashBoardFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_ProfileFragment_to_EditProfileFragment"
+            app:destination="@id/EditProfileFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_TabFragment"
+            app:destination="@id/TabFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_NotificationFragment"
+            app:destination="@id/NotificationFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_CreatePostFragment"
+            app:destination="@id/CreatePostFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_WhoToFollow2Fragment"
+            app:destination="@id/WhoToFollow2Fragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_RepoartFragment"
+            app:destination="@id/RepoartFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+        <action
+            android:id="@+id/action_ProfileFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_WhoToFollowDashBoardFragment"
+            app:destination="@id/WhoToFollowDashBoardFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditProfileFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile">
+    </fragment>
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CategoryFragment"
+            app:destination="@id/CategoryFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WhoToFollowFragment"
+        android:name="com.dreammedia.dreammedia.loginProcess.WhoToFollowFragment"
+        tools:layout="@layout/fragment_who_to_follow">
+
+        <action
+            android:id="@+id/action_WhoToFollowFragment_to_DashboardFragment"
+            app:destination="@id/DashboardFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CreatePostFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.CreatePostFragment"
+        tools:layout="@layout/fragment_create_post">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/TabFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.TabFragment"
+        tools:layout="@layout/fragment_tab">
+
+        <action
+            android:id="@+id/action_TabFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/NotificationFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.NotificationFragment"
+        tools:layout="@layout/fragment_notification">
+
+        <action
+            android:id="@+id/action_NotificationFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.FAQFragment"
+        tools:layout="@layout/fragment_faq">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ContactUsFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WhoToFollow2Fragment"
+        android:name="com.dreammedia.dreammedia.loginProcess.WhoToFollow2Fragment"
+        tools:layout="@layout/fragment_who_to_follow2">
+
+        <action
+            android:id="@+id/action_WhoToFollow2Fragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RateUSFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.RateUSFragment"
+        tools:layout="@layout/fragment_rate_us">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WalletFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.wallet.WalletFragment"
+        tools:layout="@layout/fragment_wallet">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CategoryFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.CategoryFragment"
+        tools:layout="@layout/fragment_category">
+
+        <action
+            android:id="@+id/action_CategoryFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+        <action
+            android:id="@+id/action_CategoryFragment_to_EditorFragment"
+            app:destination="@id/EditorFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ChangePasswordFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.SearchFragment"
+        tools:layout="@layout/fragment_search">'
+
+        <action
+            android:id="@+id/action_SearchFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+        <action
+            android:id="@+id/action_SearchFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+        <action
+            android:id="@+id/action_SearchFragment_to_RepoartFragment"
+            app:destination="@id/RepoartFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RepoartFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.RepoartFragment"
+        tools:layout="@layout/fragment_report">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentSlider"
+        android:name="com.dreammedia.dreammedia.customWigits.viewPager.FragmentSlider"
+        tools:layout="@layout/fragment_slider_item">
+
+        <action
+            android:id="@+id/action_FragmentSlider_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/FragmentSliderStatus"
+        android:name="com.dreammedia.dreammedia.customWigits.viewPager.FragmentSliderStatus"
+        tools:layout="@layout/fragment_slider_item_status">
+
+        <action
+            android:id="@+id/action_FragmentSliderStatus_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WhoToFollowDashBoardFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.WhoToFollowDashBoardFragment"
+        tools:layout="@layout/fragment_who_to_follow_dashboard">
+
+        <action
+            android:id="@+id/action_DashboardFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditorFragment"
+        android:name="com.dreammedia.dreammedia.dashboard.editor.EditorFragment"
+        tools:layout="@layout/fragment_editor">
+
+
+    </fragment>
+
+
+</navigation>

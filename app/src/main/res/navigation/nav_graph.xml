@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.dreammedia.dreammedia.loginProcess.LoginFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_ForgotPasswordFragment"
+            app:destination="@id/ForgotPasswordFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.dreammedia.dreammedia.loginProcess.SignUpFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_SignUpFragment_to_VerifyOtpFragment"
+            app:destination="@id/VerifyOtpFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ForgotPasswordFragment"
+        android:name="com.dreammedia.dreammedia.loginProcess.ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password">
+
+        <action
+            android:id="@+id/action_ForgotPasswordFragment_to_VerifyOtpFragment"
+            app:destination="@id/VerifyOtpFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/VerifyOtpFragment"
+        android:name="com.dreammedia.dreammedia.loginProcess.VerifyOtpFragment"
+        tools:layout="@layout/fragment_verify_otp">
+
+        <action
+            android:id="@+id/action_VerifyOtpFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+    </fragment>
+
+
+</navigation>

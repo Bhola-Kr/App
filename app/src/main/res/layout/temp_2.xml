@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lyMain"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp">
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.imageview.TopCropImageView
+            android:id="@+id/img1"
+            android:src="@drawable/nature"
+            android:scaleType="matrix"
+            android:layout_marginLeft="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_200sdp"/>
+
+        <ImageView
+            android:id="@+id/imgFram"
+            android:src="@drawable/temp2"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.imageview.DragTextView
+            android:elevation="@dimen/_5sdp"
+            android:textColor="@color/white"
+            style="@style/TextStyle_bold"
+            android:padding="@dimen/_6sdp"
+            android:textAllCaps="true"
+            android:maxLines="2"
+            android:editable="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.edittext.RotatableAutofitEditText
+            android:id="@+id/tvT0"
+            android:layout_marginTop="@dimen/_210sdp"
+            android:layout_marginLeft="@dimen/_100sdp"
+            style="@style/TextStyle_bold"
+            android:textSize="@dimen/_18sdp"
+
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:text="COME AND "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            autofit:clipBounds="false"
+            autofit:maxTextSizee="@dimen/autoresize_max_text_size"
+            autofit:minTextSizee="@dimen/autoresize_min_text_size"
+            autofit:minWidth="@dimen/autoresize_min_width"
+            autofit:movable="true"
+            autofit:resizable="false"
+            autofit:rotatable="false" />
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.edittext.RotatableAutofitEditText
+            android:id="@+id/tvT1"
+            android:layout_marginTop="@dimen/_230sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
+            style="@style/TextStyle_bold"
+            android:textSize="@dimen/_18sdp"
+
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:text="CELEBRATE WITH US"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            autofit:clipBounds="false"
+            autofit:maxTextSizee="@dimen/autoresize_max_text_size"
+            autofit:minTextSizee="@dimen/autoresize_min_text_size"
+            autofit:minWidth="@dimen/autoresize_min_width"
+            autofit:movable="true"
+            autofit:resizable="false"
+            autofit:rotatable="false" />
+
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.edittext.RotatableAutofitEditText
+            android:id="@+id/tvT2"
+            android:layout_marginTop="@dimen/_260sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
+            style="@style/TextStyle_bold"
+
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:text="13 MARCH /12:00PM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/temp2"
+            autofit:clipBounds="false"
+            autofit:maxTextSizee="@dimen/autoresize_max_text_size"
+            autofit:minTextSizee="@dimen/autoresize_min_text_size"
+            autofit:minWidth="@dimen/autoresize_min_width"
+            autofit:movable="true"
+            autofit:resizable="false"
+            autofit:rotatable="false" />
+
+        <com.dreammedia.dreammedia.customWigits.viewPager.edittext.RotatableAutofitEditText
+            android:id="@+id/tvT3"
+            style="@style/TextStyle_bold"
+
+            android:layout_marginTop="@dimen/_300sdp"
+            android:layout_marginLeft="@dimen/_105sdp"
+
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:text="PLACE YOUR ADRESS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textColor="@android:color/white"
+            autofit:clipBounds="false"
+            autofit:maxTextSizee="@dimen/autoresize_max_text_size"
+            autofit:minTextSizee="@dimen/autoresize_min_text_size"
+            autofit:minWidth="@dimen/autoresize_min_width"
+            autofit:movable="true"
+            autofit:resizable="false"
+            autofit:rotatable="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
