@@ -89,7 +89,6 @@ import static com.dreammedia.dreammedia.network.ApiConstant.VIDEOCOUNT;
 import static com.dreammedia.dreammedia.network.ApiConstant.WALLET_AMOUNT;
 
 public interface ApiInterface {
-
     @FormUrlEncoded
     @POST(LOGIN)
     Call<LoginModel> doLogin(
