@@ -122,13 +122,13 @@ class EditProfileFragment : Fragment() {
             }else if (TextUtils.isEmpty(binding.edtPhone.text.toString().trim())) {
                 binding.edtPhone.setError(resources.getString(R.string.mobileLeftEmpty))
                 return@setOnClickListener
-            } else if ((binding.edtPhone.text.toString().trim().length)!=0) {
-                if ((binding.edtPhone.text.toString().trim().length)!=10) {
-                    binding.edtPhone.setError("number should be 10 digit")
-                    return@setOnClickListener
-                }
-                return@setOnClickListener
-            }else{
+            }
+//            else if ((binding.edtPhone.text.toString().trim().length)!=0) {
+//
+//                return@setOnClickListener
+//            }
+
+            else{
                 updateUserProfile(
                     Config.getUserProfile() ,
                     Config.getUserCover() ,

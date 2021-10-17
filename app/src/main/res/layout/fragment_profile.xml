@@ -202,12 +202,26 @@
 
                                 <ImageView
                                     android:id="@+id/tvNotification"
-                                    android:layout_toLeftOf="@+id/tvNavigation"
-                                    android:src="@drawable/ic_bell"
-                                    android:padding="@dimen/_12sdp"
                                     android:layout_width="@dimen/_40sdp"
                                     android:layout_height="match_parent"
+                                    android:layout_toLeftOf="@+id/tvNavigation"
+                                    android:padding="@dimen/_12sdp"
+                                    android:src="@drawable/ic_bell"
                                     app:tint="@color/white" />
+
+                                <TextView
+                                    android:layout_width="@dimen/_11sdp"
+                                    android:layout_height="@dimen/_11sdp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_24sdp"
+                                    android:layout_toRightOf="@id/search"
+                                    android:background="@drawable/noti_back"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_8sdp"
+                                    android:textStyle="bold" />
 
                                 <ImageView
                                     android:id="@+id/search"

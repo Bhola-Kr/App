@@ -327,6 +327,7 @@ class CreatePostFragment : Fragment() ,SelectedPhotoAdapter.ClickListener{
 
         Config.init(activity)
         binding.progress.visibility =View.VISIBLE
+        binding.progress.isEnabled=false
 
         Log.e("uploadFile", "addAddPost: "+ list.size )
         val name: RequestBody   = RequestBody.create("text/plain".toMediaTypeOrNull(), desc)

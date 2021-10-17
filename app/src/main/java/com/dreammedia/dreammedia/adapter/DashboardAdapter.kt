@@ -1,7 +1,11 @@
 package com.dreammedia.dreammedia.adapter
 
 import android.annotation.SuppressLint
+import android.app.Dialog
+import android.app.ProgressDialog
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -90,7 +94,12 @@ class DashboardAdapter(
 
             holder.tvDownload.setOnClickListener { v ->
 
-                holder.tvDownload.setText("loading..")
+
+                val progressDialog = ProgressDialog(contex)
+                progressDialog.setTitle("Please Wait")
+                progressDialog.setMessage("Loading ...")
+                progressDialog.show()
+
                 val myAnim = AnimationUtils.loadAnimation(contex, R.anim.bounce)
                 val interpolator = MyBounceInterpolator(0.1, 20.0)
                 myAnim.interpolator = interpolator

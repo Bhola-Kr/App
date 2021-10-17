@@ -28,18 +28,19 @@
                 android:layout_height="@dimen/_50sdp"/>
 
             <TextView
+                android:maxLines="1"
                 android:id="@+id/tvName"
                 style="@style/TextStyle_bold"
-                android:text="@string/t1"
-                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:layout_marginRight="@dimen/_6sdp"
-                android:textSize="@dimen/_12sdp"
-                android:textColor="@color/black"
                 android:layout_toLeftOf="@+id/tvFollow"
                 android:layout_toRightOf="@+id/imgCard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:text="@string/t1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
 
             <TextView

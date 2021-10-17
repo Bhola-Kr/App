@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:maxLines="1"
                     android:id="@+id/tvName"
                     android:layout_alignParentLeft="true"
                     style="@style/TextStyle_bold"
