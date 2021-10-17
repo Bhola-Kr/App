@@ -84,6 +84,20 @@
                     android:layout_width="@dimen/_40sdp"
                     android:layout_height="match_parent"/>
 
+                <TextView
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/search"
+                    android:textSize="@dimen/_8sdp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@drawable/noti_back"
+                    android:layout_width="@dimen/_11sdp"
+                    android:layout_height="@dimen/_11sdp"/>
+
                 <ImageView
                     android:id="@+id/search"
                     android:layout_toLeftOf="@+id/tvNotification"
