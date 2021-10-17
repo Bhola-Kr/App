@@ -1,5 +1,6 @@
 package com.dreammedia.dreammedia.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -40,7 +41,7 @@ class DashboardAdapter2(
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: DashboardAdapter2.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: DashboardAdapter2.ViewHolder, @SuppressLint("RecyclerView") position: Int) {
 
         if (list != null) {
             try {
